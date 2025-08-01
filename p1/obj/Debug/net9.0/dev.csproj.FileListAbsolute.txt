@@ -1,0 +1,14 @@
+C:\Users\user\Documents\dev\bin\Debug\net9.0\dev.exe
+C:\Users\user\Documents\dev\bin\Debug\net9.0\dev.deps.json
+C:\Users\user\Documents\dev\bin\Debug\net9.0\dev.runtimeconfig.json
+C:\Users\user\Documents\dev\bin\Debug\net9.0\dev.dll
+C:\Users\user\Documents\dev\bin\Debug\net9.0\dev.pdb
+C:\Users\user\Documents\dev\obj\Debug\net9.0\dev.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\dev\obj\Debug\net9.0\dev.AssemblyInfoInputs.cache
+C:\Users\user\Documents\dev\obj\Debug\net9.0\dev.AssemblyInfo.cs
+C:\Users\user\Documents\dev\obj\Debug\net9.0\dev.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\dev\obj\Debug\net9.0\dev.dll
+C:\Users\user\Documents\dev\obj\Debug\net9.0\refint\dev.dll
+C:\Users\user\Documents\dev\obj\Debug\net9.0\dev.pdb
+C:\Users\user\Documents\dev\obj\Debug\net9.0\dev.genruntimeconfig.cache
+C:\Users\user\Documents\dev\obj\Debug\net9.0\ref\dev.dll
