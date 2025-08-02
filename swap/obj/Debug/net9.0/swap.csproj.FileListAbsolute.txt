@@ -1,0 +1,15 @@
+C:\Users\user\Documents\csharpProjects\swap\bin\Debug\net9.0\swap.exe
+C:\Users\user\Documents\csharpProjects\swap\bin\Debug\net9.0\swap.deps.json
+C:\Users\user\Documents\csharpProjects\swap\bin\Debug\net9.0\swap.runtimeconfig.json
+C:\Users\user\Documents\csharpProjects\swap\bin\Debug\net9.0\swap.dll
+C:\Users\user\Documents\csharpProjects\swap\bin\Debug\net9.0\swap.pdb
+C:\Users\user\Documents\csharpProjects\swap\obj\Debug\net9.0\swap.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\csharpProjects\swap\obj\Debug\net9.0\swap.AssemblyInfoInputs.cache
+C:\Users\user\Documents\csharpProjects\swap\obj\Debug\net9.0\swap.AssemblyInfo.cs
+C:\Users\user\Documents\csharpProjects\swap\obj\Debug\net9.0\swap.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\csharpProjects\swap\obj\Debug\net9.0\swap.sourcelink.json
+C:\Users\user\Documents\csharpProjects\swap\obj\Debug\net9.0\swap.dll
+C:\Users\user\Documents\csharpProjects\swap\obj\Debug\net9.0\refint\swap.dll
+C:\Users\user\Documents\csharpProjects\swap\obj\Debug\net9.0\swap.pdb
+C:\Users\user\Documents\csharpProjects\swap\obj\Debug\net9.0\swap.genruntimeconfig.cache
+C:\Users\user\Documents\csharpProjects\swap\obj\Debug\net9.0\ref\swap.dll
