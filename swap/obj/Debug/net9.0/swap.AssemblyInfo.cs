@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("swap")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f2d299c75a98e5ac7c32f1c428ad7ba823d2b0e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+626eca7eabe17ee4f8e269a0794af82cbd0fc9e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("swap")]
 [assembly: System.Reflection.AssemblyTitleAttribute("swap")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
