@@ -1,0 +1,15 @@
+C:\Users\user\Documents\csharpProjects\averageFour\bin\Debug\net9.0\averageFour.exe
+C:\Users\user\Documents\csharpProjects\averageFour\bin\Debug\net9.0\averageFour.deps.json
+C:\Users\user\Documents\csharpProjects\averageFour\bin\Debug\net9.0\averageFour.runtimeconfig.json
+C:\Users\user\Documents\csharpProjects\averageFour\bin\Debug\net9.0\averageFour.dll
+C:\Users\user\Documents\csharpProjects\averageFour\bin\Debug\net9.0\averageFour.pdb
+C:\Users\user\Documents\csharpProjects\averageFour\obj\Debug\net9.0\averageFour.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\csharpProjects\averageFour\obj\Debug\net9.0\averageFour.AssemblyInfoInputs.cache
+C:\Users\user\Documents\csharpProjects\averageFour\obj\Debug\net9.0\averageFour.AssemblyInfo.cs
+C:\Users\user\Documents\csharpProjects\averageFour\obj\Debug\net9.0\averageFour.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\csharpProjects\averageFour\obj\Debug\net9.0\averageFour.sourcelink.json
+C:\Users\user\Documents\csharpProjects\averageFour\obj\Debug\net9.0\averageFour.dll
+C:\Users\user\Documents\csharpProjects\averageFour\obj\Debug\net9.0\refint\averageFour.dll
+C:\Users\user\Documents\csharpProjects\averageFour\obj\Debug\net9.0\averageFour.pdb
+C:\Users\user\Documents\csharpProjects\averageFour\obj\Debug\net9.0\averageFour.genruntimeconfig.cache
+C:\Users\user\Documents\csharpProjects\averageFour\obj\Debug\net9.0\ref\averageFour.dll
