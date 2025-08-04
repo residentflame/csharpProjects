@@ -1,0 +1,15 @@
+C:\Users\user\Documents\csharpProjects\tempConversion\obj\Debug\net9.0\tempConversion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\csharpProjects\tempConversion\obj\Debug\net9.0\tempConversion.AssemblyInfoInputs.cache
+C:\Users\user\Documents\csharpProjects\tempConversion\obj\Debug\net9.0\tempConversion.AssemblyInfo.cs
+C:\Users\user\Documents\csharpProjects\tempConversion\obj\Debug\net9.0\tempConversion.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\csharpProjects\tempConversion\obj\Debug\net9.0\tempConversion.sourcelink.json
+C:\Users\user\Documents\csharpProjects\tempConversion\bin\Debug\net9.0\tempConversion.exe
+C:\Users\user\Documents\csharpProjects\tempConversion\bin\Debug\net9.0\tempConversion.deps.json
+C:\Users\user\Documents\csharpProjects\tempConversion\bin\Debug\net9.0\tempConversion.runtimeconfig.json
+C:\Users\user\Documents\csharpProjects\tempConversion\bin\Debug\net9.0\tempConversion.dll
+C:\Users\user\Documents\csharpProjects\tempConversion\bin\Debug\net9.0\tempConversion.pdb
+C:\Users\user\Documents\csharpProjects\tempConversion\obj\Debug\net9.0\tempConversion.dll
+C:\Users\user\Documents\csharpProjects\tempConversion\obj\Debug\net9.0\refint\tempConversion.dll
+C:\Users\user\Documents\csharpProjects\tempConversion\obj\Debug\net9.0\tempConversion.pdb
+C:\Users\user\Documents\csharpProjects\tempConversion\obj\Debug\net9.0\tempConversion.genruntimeconfig.cache
+C:\Users\user\Documents\csharpProjects\tempConversion\obj\Debug\net9.0\ref\tempConversion.dll
