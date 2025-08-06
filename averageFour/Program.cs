@@ -1,33 +1,44 @@
-﻿//
-int numbOne;
-int numbTwo;
-int numbThree;
-int numbFour;
-int numbSum;
-int numbAvg;
-
-// Inputs
-
-Console.Write("Please enter the first number: ");
-numbOne = Convert.ToInt32(Console.ReadLine());
-
-Console.Write("Please enter the second number: ");
-numbTwo = Convert.ToInt32(Console.ReadLine());
-
-Console.Write("Please enter the third number: ");
-numbThree = Convert.ToInt32(Console.ReadLine());
-
-Console.Write("Please enter the fourth number: ");
-numbFour = Convert.ToInt32(Console.ReadLine());
+﻿int count = 0;
+int sum = 0;
+string userinput;
+int[] numbersArray = new int[100];
 
 
-// Operations
+while (true)
+{
+    Console.WriteLine("Please enter a number (Or type '0' to exit): ");
+    userinput = Console.ReadLine();
 
-numbSum = numbOne + numbTwo + numbThree + numbFour;
+    // This block of code checks if the user inputs 0
+    if (int.TryParse(userinput, out int number))
+    {
+        if (number == 0)
+        {
+            break;
+        }
+        // Checks if the count value is less than 100 and adds value to the numbers array
+        if (count < 100)
+        {
+            numbersArray[count] = number;
+            sum += number;
+            count++;
+        }
+        else
+        {
+            Console.WriteLine("Maximum of 100 numbers reached");
+        }
 
-numbAvg = numbSum / 4;
+    }
+}
+// Math calulations
+if (count > 0)
+{
+    double average = (double)sum / count;
+    Console.WriteLine($"The average is: {average}");
+}
+else
+{
+    Console.WriteLine("No numbers were entered. :(");
+}
 
 
-// Printing 
-
-Console.WriteLine($"The average of {numbOne}, {numbTwo}, {numbThree}, {numbFour} is: {numbAvg}");

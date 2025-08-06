@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("averageFour")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed69e34ba17f1c580c98ffd3c5549168abcafca5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89a664bdad6c57a0020ceb4f2c5558db5086234f")]
 [assembly: System.Reflection.AssemblyProductAttribute("averageFour")]
 [assembly: System.Reflection.AssemblyTitleAttribute("averageFour")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
