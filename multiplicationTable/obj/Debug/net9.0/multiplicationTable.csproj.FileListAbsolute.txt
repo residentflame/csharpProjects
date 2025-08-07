@@ -1,0 +1,15 @@
+C:\Users\user\Documents\csharpProjects\multiplicationTable\bin\Debug\net9.0\multiplicationTable.exe
+C:\Users\user\Documents\csharpProjects\multiplicationTable\bin\Debug\net9.0\multiplicationTable.deps.json
+C:\Users\user\Documents\csharpProjects\multiplicationTable\bin\Debug\net9.0\multiplicationTable.runtimeconfig.json
+C:\Users\user\Documents\csharpProjects\multiplicationTable\bin\Debug\net9.0\multiplicationTable.dll
+C:\Users\user\Documents\csharpProjects\multiplicationTable\bin\Debug\net9.0\multiplicationTable.pdb
+C:\Users\user\Documents\csharpProjects\multiplicationTable\obj\Debug\net9.0\multiplicationTable.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\csharpProjects\multiplicationTable\obj\Debug\net9.0\multiplicationTable.AssemblyInfoInputs.cache
+C:\Users\user\Documents\csharpProjects\multiplicationTable\obj\Debug\net9.0\multiplicationTable.AssemblyInfo.cs
+C:\Users\user\Documents\csharpProjects\multiplicationTable\obj\Debug\net9.0\multiplicationTable.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\csharpProjects\multiplicationTable\obj\Debug\net9.0\multiplicationTable.sourcelink.json
+C:\Users\user\Documents\csharpProjects\multiplicationTable\obj\Debug\net9.0\multiplicationTable.dll
+C:\Users\user\Documents\csharpProjects\multiplicationTable\obj\Debug\net9.0\refint\multiplicationTable.dll
+C:\Users\user\Documents\csharpProjects\multiplicationTable\obj\Debug\net9.0\multiplicationTable.pdb
+C:\Users\user\Documents\csharpProjects\multiplicationTable\obj\Debug\net9.0\multiplicationTable.genruntimeconfig.cache
+C:\Users\user\Documents\csharpProjects\multiplicationTable\obj\Debug\net9.0\ref\multiplicationTable.dll
