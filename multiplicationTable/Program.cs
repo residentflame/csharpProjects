@@ -1,4 +1,4 @@
-namespace MultiplicationTable
+﻿namespace MultiplicationTable
 {
     internal static class Program
     {
