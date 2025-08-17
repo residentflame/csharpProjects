@@ -1,0 +1,100 @@
+using System.Drawing.Text;
+
+namespace Calculator
+{
+    public partial class Form1 : Form
+    {
+
+        string currentInput = "";
+
+        double firstOperand = 0;
+        string operation = "";
+        double secondOperand = 0;
+
+        double result = 0;
+        // int operatorPressCount = 0;
+        public Form1()
+        {
+            InitializeComponent();
+
+        }
+
+
+        // Number Button click
+        private void NumberButton_Click(object sender, EventArgs e)
+        {
+
+            Button button = sender as Button;
+            if (button != null)
+            {
+                // Update the display
+                currentInput += button.Text; // Append the button's text to currentInput
+
+                if (string.IsNullOrEmpty(operation))
+                {
+                    textBox1.Text = currentInput;
+                }
+                else
+                {
+                    // If an operation is set, display the first operand, operator, and current input (second operand)
+                    textBox1.Text = firstOperand + " " + operation + " " + currentInput;
+                }
+            }
+        }
+
+        // Clear button logic
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            if (sender is Button)
+            {
+                if (button.Text == "Clear")
+                {
+                    ClearCalculator();
+                }
+                else
+                {
+                    // Update the display
+                    currentInput += button.Text; // Append the button's text to currentInput
+                    textBox1.Text = currentInput;
+
+                }
+            }
+        }
+
+        // Clear button
+        private void ClearCalculator()
+        {
+
+            currentInput = "";
+            result = 0;
+            operation = "";
+            textBox1.Text = "0";
+            firstOperand = 0;
+            secondOperand = 0;
+            
+        }
+
+        private void btnOperand(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                // Check if the button text is an operator
+                if (button.Text == "+" || button.Text == "-" || button.Text == "*" || button.Text == "/")
+                {
+                    if (string.IsNullOrEmpty(currentInput))
+                    {
+                        MessageBox.Show("Please enter a number first.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return; // Exit if no number is entered
+                    }
+                    
+                    firstOperand = double.Parse(currentInput);
+                    operation = button.Text;
+                    textBox1.Text = firstOperand + " " + operation;
+                    currentInput = ""; // Reset current input for the next number
+                }
+            }
+        }
+    }
+}
