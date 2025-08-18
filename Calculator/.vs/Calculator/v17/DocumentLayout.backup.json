@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{7F2334FE-0880-40C2-BB71-E41AC9142532}|Calculator.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F2334FE-0880-40C2-BB71-E41AC9142532}|Calculator.csproj|c:\\users\\user\\documents\\csharpprojects\\calculator\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F2334FE-0880-40C2-BB71-E41AC9142532}|Calculator.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F2334FE-0880-40C2-BB71-E41AC9142532}|Calculator.csproj|c:\\users\\user\\documents\\csharpprojects\\calculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7F2334FE-0880-40C2-BB71-E41AC9142532}|Calculator.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F2334FE-0880-40C2-BB71-E41AC9142532}|Calculator.csproj|C:\\Users\\user\\Documents\\csharpProjects\\Calculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7F2334FE-0880-40C2-BB71-E41AC9142532}|Calculator.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7F2334FE-0880-40C2-BB71-E41AC9142532}|Calculator.csproj|c:\\users\\user\\documents\\csharpprojects\\calculator\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F2334FE-0880-40C2-BB71-E41AC9142532}|Calculator.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\csharpProjects\\Calculator\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAcwH4AAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwHUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-12T22:43:56.322Z",
               "IsPinned": true,
@@ -45,25 +45,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\csharpProjects\\Calculator\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\csharpProjects\\Calculator\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T02:58:33.708Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\csharpProjects\\Calculator\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\csharpProjects\\Calculator\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T00:15:23.908Z"
+              "WhenOpened": "2025-08-18T21:08:01.804Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\csharpProjects\\Calculator\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\csharpProjects\\Calculator\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T02:58:33.708Z",
+              "EditorCaption": ""
             }
           ]
         }

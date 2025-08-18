@@ -211,7 +211,7 @@
             button13.Name = "button13";
             button13.Size = new Size(75, 35);
             button13.TabIndex = 13;
-            button13.Text = " -";
+            button13.Text = "-";
             button13.UseVisualStyleBackColor = true;
             button13.Click += btnOperand;
             // 

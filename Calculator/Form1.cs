@@ -72,6 +72,7 @@ namespace Calculator
             Button button = sender as Button;
             if (button != null)
             {
+
                 // Check if the button text is an operator
                 if (button.Text == "+" || button.Text == "-" || button.Text == "*" || button.Text == "/")
                 {
@@ -87,24 +88,44 @@ namespace Calculator
                         MessageBox.Show("Invalid number entered.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return; // Exit if input is invalid
                     }
-
                     operation = button.Text;
                     textBox1.Text = firstOperand + " " + operation;
                     currentInput = ""; // Reset current input for the next number
                 }
-                else if (button.Text == "=" | !string.IsNullOrEmpty(currentInput))
+            }
+
+            if (button.Text == "=" && !string.IsNullOrEmpty(currentInput))
+            {
+                if (!double.TryParse(currentInput, out secondOperand))
                 {
-                    if (!double.TryParse(currentInput, out secondOperand))
+                    MessageBox.Show("Invalid number entered.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (operation.Equals("+"))
+                {
+                    result = firstOperand + secondOperand;
+                    DisplayUpdate(result.ToString());
+                }
+                else if (operation.Equals("-"))
+                {
+                    result = firstOperand - secondOperand;
+                    DisplayUpdate(result.ToString());
+                }
+                else if (operation.Equals("*"))
+                {
+                    result = secondOperand * firstOperand;
+                    DisplayUpdate(result.ToString());
+                }
+                else if (operation.Equals("/"))
+                {
+                    if (secondOperand == 0)
                     {
-                        MessageBox.Show("Invalid number entered.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("invalid cant divide by 0");
                         return;
                     }
-
-                    if (operation == "+")
-                    {
-                        result = firstOperand + secondOperand;
-                        DisplayUpdate(result.ToString());
-                    }
+                    result = firstOperand / secondOperand;
+                    DisplayUpdate(result.ToString());
                 }
             }
         }
