@@ -12,6 +12,28 @@ namespace Calculator
             InitializeComponent();
 
         }
+        // Calculator display clear
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            ClearCalculator();
+        }
+
+        // Clear button logic
+        private void ClearCalculator()
+        {
+            currentInput = "";
+            result = 0;
+            operation = "";
+            textBox1.Text = "0";
+            firstOperand = 0;
+            secondOperand = 0;
+        }
+
+        // Update Calculator screen
+        private void DisplayUpdate(string text)
+        {
+            textBox1.Text = text; // Update the display with the result
+        }
 
         // Number Button click method
         private void NumberButton_Click(object sender, EventArgs e)
@@ -33,38 +55,6 @@ namespace Calculator
                     textBox1.Text = $"{firstOperand} {operation} {currentInput}";
                 }
             }
-        }
-
-        // Clear button logic
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            Button button = sender as Button;
-            if (sender is Button)
-            {
-                if (button.Text == "Clear")
-                {
-                    ClearCalculator();
-                }
-                else
-                {
-                    // Update the display
-                    currentInput += button.Text; // Append the button's text to currentInput
-                    textBox1.Text = currentInput;
-                }
-            }
-        }
-
-        // Clear button
-        private void ClearCalculator()
-        {
-
-            currentInput = "";
-            result = 0;
-            operation = "";
-            textBox1.Text = "0";
-            firstOperand = 0;
-            secondOperand = 0;
-
         }
 
         private void btnOperand(object sender, EventArgs e)
@@ -128,10 +118,6 @@ namespace Calculator
                     DisplayUpdate(result.ToString());
                 }
             }
-        }
-        private void DisplayUpdate(string text)
-        {
-            textBox1.Text = text; // Update the display with the result
         }
     }
 }
