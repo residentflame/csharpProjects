@@ -51,11 +51,11 @@
             // 
             textBox1.Anchor = AnchorStyles.Bottom;
             textBox1.BackColor = SystemColors.HighlightText;
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.Location = new Point(56, 12);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(238, 44);
+            textBox1.Size = new Size(238, 37);
             textBox1.TabIndex = 0;
             textBox1.TextAlign = HorizontalAlignment.Right;
             // 
@@ -63,7 +63,7 @@
             // 
             button1.Anchor = AnchorStyles.Bottom;
             button1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(56, 65);
+            button1.Location = new Point(57, 55);
             button1.Name = "button1";
             button1.Size = new Size(75, 35);
             button1.TabIndex = 1;
@@ -75,7 +75,7 @@
             // 
             button2.Anchor = AnchorStyles.Bottom;
             button2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(137, 65);
+            button2.Location = new Point(137, 55);
             button2.Name = "button2";
             button2.Size = new Size(75, 35);
             button2.TabIndex = 2;
@@ -87,7 +87,7 @@
             // 
             button3.Anchor = AnchorStyles.Bottom;
             button3.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(218, 65);
+            button3.Location = new Point(218, 55);
             button3.Name = "button3";
             button3.Size = new Size(75, 35);
             button3.TabIndex = 3;
@@ -99,7 +99,7 @@
             // 
             button4.Anchor = AnchorStyles.Bottom;
             button4.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(57, 106);
+            button4.Location = new Point(57, 96);
             button4.Name = "button4";
             button4.Size = new Size(75, 35);
             button4.TabIndex = 4;
@@ -111,7 +111,7 @@
             // 
             button5.Anchor = AnchorStyles.Bottom;
             button5.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.Location = new Point(137, 106);
+            button5.Location = new Point(138, 96);
             button5.Name = "button5";
             button5.Size = new Size(75, 35);
             button5.TabIndex = 5;
@@ -123,7 +123,7 @@
             // 
             button6.Anchor = AnchorStyles.Bottom;
             button6.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.Location = new Point(218, 106);
+            button6.Location = new Point(219, 96);
             button6.Name = "button6";
             button6.Size = new Size(75, 35);
             button6.TabIndex = 6;
@@ -135,7 +135,7 @@
             // 
             button7.Anchor = AnchorStyles.Bottom;
             button7.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button7.Location = new Point(56, 147);
+            button7.Location = new Point(56, 137);
             button7.Name = "button7";
             button7.Size = new Size(75, 35);
             button7.TabIndex = 7;
@@ -147,7 +147,7 @@
             // 
             button8.Anchor = AnchorStyles.Bottom;
             button8.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button8.Location = new Point(137, 149);
+            button8.Location = new Point(138, 137);
             button8.Name = "button8";
             button8.Size = new Size(75, 35);
             button8.TabIndex = 8;
@@ -159,7 +159,7 @@
             // 
             button9.Anchor = AnchorStyles.Bottom;
             button9.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button9.Location = new Point(218, 147);
+            button9.Location = new Point(219, 137);
             button9.Name = "button9";
             button9.Size = new Size(75, 35);
             button9.TabIndex = 9;
@@ -171,7 +171,7 @@
             // 
             button10.Anchor = AnchorStyles.Bottom;
             button10.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button10.Location = new Point(56, 190);
+            button10.Location = new Point(56, 178);
             button10.Name = "button10";
             button10.Size = new Size(75, 35);
             button10.TabIndex = 10;
@@ -183,7 +183,7 @@
             // 
             button11.Anchor = AnchorStyles.Bottom;
             button11.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button11.Location = new Point(137, 190);
+            button11.Location = new Point(137, 178);
             button11.Name = "button11";
             button11.Size = new Size(75, 35);
             button11.TabIndex = 11;
@@ -195,7 +195,7 @@
             // 
             button12.Anchor = AnchorStyles.Bottom;
             button12.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button12.Location = new Point(218, 188);
+            button12.Location = new Point(219, 178);
             button12.Name = "button12";
             button12.Size = new Size(75, 35);
             button12.TabIndex = 12;
@@ -207,7 +207,7 @@
             // 
             button13.Anchor = AnchorStyles.Bottom;
             button13.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button13.Location = new Point(56, 231);
+            button13.Location = new Point(57, 219);
             button13.Name = "button13";
             button13.Size = new Size(75, 35);
             button13.TabIndex = 13;
@@ -219,7 +219,7 @@
             // 
             button14.Anchor = AnchorStyles.Bottom;
             button14.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button14.Location = new Point(137, 231);
+            button14.Location = new Point(138, 219);
             button14.Name = "button14";
             button14.Size = new Size(75, 35);
             button14.TabIndex = 14;
@@ -231,7 +231,7 @@
             // 
             button15.Anchor = AnchorStyles.Bottom;
             button15.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button15.Location = new Point(218, 231);
+            button15.Location = new Point(219, 219);
             button15.Name = "button15";
             button15.Size = new Size(75, 35);
             button15.TabIndex = 15;
@@ -245,9 +245,9 @@
             btnClear.BackColor = Color.White;
             btnClear.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnClear.ForeColor = SystemColors.ControlText;
-            btnClear.Location = new Point(57, 272);
+            btnClear.Location = new Point(57, 260);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(237, 35);
+            btnClear.Size = new Size(237, 52);
             btnClear.TabIndex = 16;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
