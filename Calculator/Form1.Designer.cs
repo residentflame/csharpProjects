@@ -175,6 +175,7 @@
             button10.Name = "button10";
             button10.Size = new Size(75, 35);
             button10.TabIndex = 10;
+            button10.Tag = "";
             button10.Text = "+";
             button10.UseVisualStyleBackColor = true;
             button10.Click += btnOperand;
@@ -199,6 +200,7 @@
             button12.Name = "button12";
             button12.Size = new Size(75, 35);
             button12.TabIndex = 12;
+            button12.Tag = "";
             button12.Text = "/";
             button12.UseVisualStyleBackColor = true;
             button12.Click += btnOperand;
@@ -211,6 +213,7 @@
             button13.Name = "button13";
             button13.Size = new Size(75, 35);
             button13.TabIndex = 13;
+            button13.Tag = "";
             button13.Text = "-";
             button13.UseVisualStyleBackColor = true;
             button13.Click += btnOperand;
@@ -223,6 +226,7 @@
             button14.Name = "button14";
             button14.Size = new Size(75, 35);
             button14.TabIndex = 14;
+            button14.Tag = "";
             button14.Text = "*";
             button14.UseVisualStyleBackColor = true;
             button14.Click += btnOperand;
