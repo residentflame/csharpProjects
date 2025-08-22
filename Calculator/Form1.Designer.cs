@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             textBox1 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
+            btnOne = new Button();
+            btnTwo = new Button();
+            btnThree = new Button();
+            btnFour = new Button();
+            btnFive = new Button();
+            btnSix = new Button();
+            btnSeven = new Button();
+            btnEight = new Button();
+            btnNine = new Button();
+            btnAdd = new Button();
+            btnZero = new Button();
+            btnDivide = new Button();
+            btnSubtract = new Button();
+            btnMultiply = new Button();
+            btnEquals = new Button();
             btnClear = new Button();
             SuspendLayout();
             // 
@@ -59,189 +59,174 @@
             textBox1.TabIndex = 0;
             textBox1.TextAlign = HorizontalAlignment.Right;
             // 
-            // button1
+            // btnOne
             // 
-            button1.Anchor = AnchorStyles.Bottom;
-            button1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(57, 55);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 35);
-            button1.TabIndex = 1;
-            button1.Text = "1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += NumberButton_Click;
+            btnOne.Anchor = AnchorStyles.Bottom;
+            btnOne.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnOne.Location = new Point(57, 55);
+            btnOne.Name = "btnOne";
+            btnOne.Size = new Size(75, 35);
+            btnOne.TabIndex = 1;
+            btnOne.UseVisualStyleBackColor = true;
+            btnOne.Click += NumberButton_Click;
             // 
-            // button2
+            // btnTwo
             // 
-            button2.Anchor = AnchorStyles.Bottom;
-            button2.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(137, 55);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 35);
-            button2.TabIndex = 2;
-            button2.Text = "2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += NumberButton_Click;
+            btnTwo.Anchor = AnchorStyles.Bottom;
+            btnTwo.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnTwo.Location = new Point(137, 55);
+            btnTwo.Name = "btnTwo";
+            btnTwo.Size = new Size(75, 35);
+            btnTwo.TabIndex = 2;
+            btnTwo.UseVisualStyleBackColor = true;
+            btnTwo.Click += NumberButton_Click;
             // 
-            // button3
+            // btnThree
             // 
-            button3.Anchor = AnchorStyles.Bottom;
-            button3.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(218, 55);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 35);
-            button3.TabIndex = 3;
-            button3.Text = "3";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += NumberButton_Click;
+            btnThree.Anchor = AnchorStyles.Bottom;
+            btnThree.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnThree.Location = new Point(218, 55);
+            btnThree.Name = "btnThree";
+            btnThree.Size = new Size(75, 35);
+            btnThree.TabIndex = 3;
+            btnThree.UseVisualStyleBackColor = true;
+            btnThree.Click += NumberButton_Click;
             // 
-            // button4
+            // btnFour
             // 
-            button4.Anchor = AnchorStyles.Bottom;
-            button4.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(57, 96);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 35);
-            button4.TabIndex = 4;
-            button4.Text = "4";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += NumberButton_Click;
+            btnFour.Anchor = AnchorStyles.Bottom;
+            btnFour.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnFour.Location = new Point(57, 96);
+            btnFour.Name = "btnFour";
+            btnFour.Size = new Size(75, 35);
+            btnFour.TabIndex = 4;
+            btnFour.UseVisualStyleBackColor = true;
+            btnFour.Click += NumberButton_Click;
             // 
-            // button5
+            // btnFive
             // 
-            button5.Anchor = AnchorStyles.Bottom;
-            button5.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.Location = new Point(138, 96);
-            button5.Name = "button5";
-            button5.Size = new Size(75, 35);
-            button5.TabIndex = 5;
-            button5.Text = "5";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += NumberButton_Click;
+            btnFive.Anchor = AnchorStyles.Bottom;
+            btnFive.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnFive.Location = new Point(138, 96);
+            btnFive.Name = "btnFive";
+            btnFive.Size = new Size(75, 35);
+            btnFive.TabIndex = 5;
+            btnFive.UseVisualStyleBackColor = true;
+            btnFive.Click += NumberButton_Click;
             // 
-            // button6
+            // btnSix
             // 
-            button6.Anchor = AnchorStyles.Bottom;
-            button6.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.Location = new Point(219, 96);
-            button6.Name = "button6";
-            button6.Size = new Size(75, 35);
-            button6.TabIndex = 6;
-            button6.Text = "6";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += NumberButton_Click;
+            btnSix.Anchor = AnchorStyles.Bottom;
+            btnSix.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSix.Location = new Point(219, 96);
+            btnSix.Name = "btnSix";
+            btnSix.Size = new Size(75, 35);
+            btnSix.TabIndex = 6;
+            btnSix.UseVisualStyleBackColor = true;
+            btnSix.Click += NumberButton_Click;
             // 
-            // button7
+            // btnSeven
             // 
-            button7.Anchor = AnchorStyles.Bottom;
-            button7.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button7.Location = new Point(56, 137);
-            button7.Name = "button7";
-            button7.Size = new Size(75, 35);
-            button7.TabIndex = 7;
-            button7.Text = "7";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += NumberButton_Click;
+            btnSeven.Anchor = AnchorStyles.Bottom;
+            btnSeven.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSeven.Location = new Point(56, 137);
+            btnSeven.Name = "btnSeven";
+            btnSeven.Size = new Size(75, 35);
+            btnSeven.TabIndex = 7;
+            btnSeven.UseVisualStyleBackColor = true;
+            btnSeven.Click += NumberButton_Click;
             // 
-            // button8
+            // btnEight
             // 
-            button8.Anchor = AnchorStyles.Bottom;
-            button8.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button8.Location = new Point(138, 137);
-            button8.Name = "button8";
-            button8.Size = new Size(75, 35);
-            button8.TabIndex = 8;
-            button8.Text = "8";
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += NumberButton_Click;
+            btnEight.Anchor = AnchorStyles.Bottom;
+            btnEight.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnEight.Location = new Point(138, 137);
+            btnEight.Name = "btnEight";
+            btnEight.Size = new Size(75, 35);
+            btnEight.TabIndex = 8;
+            btnEight.UseVisualStyleBackColor = true;
+            btnEight.Click += NumberButton_Click;
             // 
-            // button9
+            // btnNine
             // 
-            button9.Anchor = AnchorStyles.Bottom;
-            button9.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button9.Location = new Point(219, 137);
-            button9.Name = "button9";
-            button9.Size = new Size(75, 35);
-            button9.TabIndex = 9;
-            button9.Text = "9";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += NumberButton_Click;
+            btnNine.Anchor = AnchorStyles.Bottom;
+            btnNine.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnNine.Location = new Point(219, 137);
+            btnNine.Name = "btnNine";
+            btnNine.Size = new Size(75, 35);
+            btnNine.TabIndex = 9;
+            btnNine.UseVisualStyleBackColor = true;
+            btnNine.Click += NumberButton_Click;
             // 
-            // button10
+            // btnAdd
             // 
-            button10.Anchor = AnchorStyles.Bottom;
-            button10.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button10.Location = new Point(56, 178);
-            button10.Name = "button10";
-            button10.Size = new Size(75, 35);
-            button10.TabIndex = 10;
-            button10.Tag = "";
-            button10.Text = "+";
-            button10.UseVisualStyleBackColor = true;
-            button10.Click += btnOperand;
+            btnAdd.Anchor = AnchorStyles.Bottom;
+            btnAdd.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAdd.Location = new Point(56, 178);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(75, 35);
+            btnAdd.TabIndex = 10;
+            btnAdd.Tag = "";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnOperand;
             // 
-            // button11
+            // btnZero
             // 
-            button11.Anchor = AnchorStyles.Bottom;
-            button11.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button11.Location = new Point(137, 178);
-            button11.Name = "button11";
-            button11.Size = new Size(75, 35);
-            button11.TabIndex = 11;
-            button11.Text = "0";
-            button11.UseVisualStyleBackColor = true;
-            button11.Click += NumberButton_Click;
+            btnZero.Anchor = AnchorStyles.Bottom;
+            btnZero.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnZero.Location = new Point(137, 178);
+            btnZero.Name = "btnZero";
+            btnZero.Size = new Size(75, 35);
+            btnZero.TabIndex = 11;
+            btnZero.UseVisualStyleBackColor = true;
+            btnZero.Click += NumberButton_Click;
             // 
-            // button12
+            // btnDivide
             // 
-            button12.Anchor = AnchorStyles.Bottom;
-            button12.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button12.Location = new Point(219, 178);
-            button12.Name = "button12";
-            button12.Size = new Size(75, 35);
-            button12.TabIndex = 12;
-            button12.Tag = "";
-            button12.Text = "/";
-            button12.UseVisualStyleBackColor = true;
-            button12.Click += btnOperand;
+            btnDivide.Anchor = AnchorStyles.Bottom;
+            btnDivide.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDivide.Location = new Point(219, 178);
+            btnDivide.Name = "btnDivide";
+            btnDivide.Size = new Size(75, 35);
+            btnDivide.TabIndex = 12;
+            btnDivide.Tag = "";
+            btnDivide.UseVisualStyleBackColor = true;
+            btnDivide.Click += btnOperand;
             // 
-            // button13
+            // btnSubtract
             // 
-            button13.Anchor = AnchorStyles.Bottom;
-            button13.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button13.Location = new Point(57, 219);
-            button13.Name = "button13";
-            button13.Size = new Size(75, 35);
-            button13.TabIndex = 13;
-            button13.Tag = "";
-            button13.Text = "-";
-            button13.UseVisualStyleBackColor = true;
-            button13.Click += btnOperand;
+            btnSubtract.Anchor = AnchorStyles.Bottom;
+            btnSubtract.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSubtract.Location = new Point(57, 219);
+            btnSubtract.Name = "btnSubtract";
+            btnSubtract.Size = new Size(75, 35);
+            btnSubtract.TabIndex = 13;
+            btnSubtract.Tag = "";
+            btnSubtract.UseVisualStyleBackColor = true;
+            btnSubtract.Click += btnOperand;
             // 
-            // button14
+            // btnMultiply
             // 
-            button14.Anchor = AnchorStyles.Bottom;
-            button14.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button14.Location = new Point(138, 219);
-            button14.Name = "button14";
-            button14.Size = new Size(75, 35);
-            button14.TabIndex = 14;
-            button14.Tag = "";
-            button14.Text = "*";
-            button14.UseVisualStyleBackColor = true;
-            button14.Click += btnOperand;
+            btnMultiply.Anchor = AnchorStyles.Bottom;
+            btnMultiply.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMultiply.Location = new Point(138, 219);
+            btnMultiply.Name = "btnMultiply";
+            btnMultiply.Size = new Size(75, 35);
+            btnMultiply.TabIndex = 14;
+            btnMultiply.Tag = "";
+            btnMultiply.UseVisualStyleBackColor = true;
+            btnMultiply.Click += btnOperand;
             // 
-            // button15
+            // btnEquals
             // 
-            button15.Anchor = AnchorStyles.Bottom;
-            button15.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button15.Location = new Point(219, 219);
-            button15.Name = "button15";
-            button15.Size = new Size(75, 35);
-            button15.TabIndex = 15;
-            button15.Text = "=";
-            button15.UseVisualStyleBackColor = true;
-            button15.Click += btnOperand;
+            btnEquals.Anchor = AnchorStyles.Bottom;
+            btnEquals.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnEquals.Location = new Point(219, 219);
+            btnEquals.Name = "btnEquals";
+            btnEquals.Size = new Size(75, 35);
+            btnEquals.TabIndex = 15;
+            btnEquals.UseVisualStyleBackColor = true;
+            btnEquals.Click += btnOperand;
             // 
             // btnClear
             // 
@@ -253,7 +238,6 @@
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(237, 52);
             btnClear.TabIndex = 16;
-            btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
             btnClear.Click += btnClear_Click;
             // 
@@ -264,21 +248,21 @@
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(354, 324);
             Controls.Add(btnClear);
-            Controls.Add(button15);
-            Controls.Add(button14);
-            Controls.Add(button13);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnEquals);
+            Controls.Add(btnMultiply);
+            Controls.Add(btnSubtract);
+            Controls.Add(btnDivide);
+            Controls.Add(btnZero);
+            Controls.Add(btnAdd);
+            Controls.Add(btnNine);
+            Controls.Add(btnEight);
+            Controls.Add(btnSeven);
+            Controls.Add(btnSix);
+            Controls.Add(btnFive);
+            Controls.Add(btnFour);
+            Controls.Add(btnThree);
+            Controls.Add(btnTwo);
+            Controls.Add(btnOne);
             Controls.Add(textBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
@@ -291,21 +275,21 @@
         #endregion
 
         private TextBox textBox1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button13;
-        private Button button14;
-        private Button button15;
+        private Button btnOne;
+        private Button btnTwo;
+        private Button btnThree;
+        private Button btnFour;
+        private Button btnFive;
+        private Button btnSix;
+        private Button btnSeven;
+        private Button btnEight;
+        private Button btnNine;
+        private Button btnAdd;
+        private Button btnZero;
+        private Button btnDivide;
+        private Button btnSubtract;
+        private Button btnMultiply;
+        private Button btnEquals;
         private Button btnClear;
     }
 }
