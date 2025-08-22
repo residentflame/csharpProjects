@@ -1,0 +1,17 @@
+C:\Users\user\Documents\csharpProjects\SimpleTodo\bin\Debug\net9.0-windows\SimpleTodo.exe
+C:\Users\user\Documents\csharpProjects\SimpleTodo\bin\Debug\net9.0-windows\SimpleTodo.deps.json
+C:\Users\user\Documents\csharpProjects\SimpleTodo\bin\Debug\net9.0-windows\SimpleTodo.runtimeconfig.json
+C:\Users\user\Documents\csharpProjects\SimpleTodo\bin\Debug\net9.0-windows\SimpleTodo.dll
+C:\Users\user\Documents\csharpProjects\SimpleTodo\bin\Debug\net9.0-windows\SimpleTodo.pdb
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\SimpleTodo.Form1.resources
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\SimpleTodo.csproj.GenerateResource.cache
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\SimpleTodo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\SimpleTodo.AssemblyInfoInputs.cache
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\SimpleTodo.AssemblyInfo.cs
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\SimpleTodo.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\SimpleTodo.sourcelink.json
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\SimpleTodo.dll
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\refint\SimpleTodo.dll
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\SimpleTodo.pdb
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\SimpleTodo.genruntimeconfig.cache
+C:\Users\user\Documents\csharpProjects\SimpleTodo\obj\Debug\net9.0-windows\ref\SimpleTodo.dll
