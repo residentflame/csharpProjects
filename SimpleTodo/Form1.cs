@@ -14,6 +14,7 @@ namespace SimpleTodo
             // Checks if the text task is not null
             if (!string.IsNullOrEmpty(taskInput.Text))
             {
+                // Assigns text box text (textInput) to the Listbox named taskBox
                 taskBox.Items.Add(taskInput.Text);
                 MessageBox.Show($"Task added successfully!");
                 taskInput.Clear();
@@ -22,6 +23,7 @@ namespace SimpleTodo
             {
                 MessageBox.Show("Please enter an item.");
             }
+            // Turns the focus to the textbox
             taskInput.Focus();
         }
 
@@ -29,7 +31,7 @@ namespace SimpleTodo
         {
             // Checks if the list task is selected
             if (taskBox.SelectedItem != null)
-            {
+            {    
                 taskBox.Items.Remove(taskBox.SelectedItem);
                 MessageBox.Show("Item removed successfully!");
             }
