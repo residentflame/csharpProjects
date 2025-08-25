@@ -1,5 +1,4 @@
 using System.Windows.Forms;
-using System.IO;
 using System.Collections;
 using System.Diagnostics.Eventing.Reader;
 namespace SimpleTodo
@@ -12,7 +11,7 @@ namespace SimpleTodo
         }
 
 
-        List<string> TodoItems = new List<string>();
+        List<string> TodoItems = new();
         private void addTask_Click(object sender, EventArgs e)
         {
             // Checks if the text task is not null
@@ -25,12 +24,12 @@ namespace SimpleTodo
                 TodoItems.Add(taskInput.Text);
 
                 MessageBox.Show("Task added successfully!");
+
                 taskInput.Clear();
             }
-            else
-            {
-                MessageBox.Show("Please enter an item.");
-            }
+
+            MessageBox.Show("Please enter an item.");
+
             // Turns the focus to the textbox
             taskInput.Focus();
         }
@@ -39,14 +38,15 @@ namespace SimpleTodo
         {
             // Checks if the list task is selected
             if (taskBox.SelectedItem != null)
+
             {   // remove selected ListBox item if != null
                 taskBox.Items.Remove(taskBox.SelectedItem);
+
                 MessageBox.Show("Item removed successfully!");
             }
-            else
-            {
-                MessageBox.Show("Please select an item.");
-            }
+
+            MessageBox.Show("Please select an item.");
+
             taskInput.Focus();
         }
 
@@ -54,7 +54,9 @@ namespace SimpleTodo
         {
             // Create an instance of the SaveFileDialog
             SaveFileDialog SaveFileDialog = new SaveFileDialog();
+
             SaveFileDialog.Filter = "Text File|*.txt";
+
             // Show the dialog and check if the user clicked OK
             if (SaveFileDialog.ShowDialog() == DialogResult.OK)
 
