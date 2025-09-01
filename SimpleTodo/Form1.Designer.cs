@@ -46,7 +46,6 @@
             taskInput.Name = "taskInput";
             taskInput.Size = new Size(465, 57);
             taskInput.TabIndex = 0;
-            taskInput.Text = "Enter your task: ";
             taskInput.TextAlign = HorizontalAlignment.Center;
             // 
             // addTask
@@ -106,6 +105,7 @@
             btnLoad.TabIndex = 5;
             btnLoad.Text = "Load List";
             btnLoad.UseVisualStyleBackColor = false;
+            btnLoad.Click += btnLoad_Click;
             // 
             // btnRemove
             // 
