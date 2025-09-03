@@ -139,7 +139,7 @@ namespace Calculator
 
         }
 
-        private void BtnOperand(object sender, EventArgs e)
+        private void BtnOperand_Click(object sender, EventArgs e)
         {
             Button button = sender as Button;
             if (button != null)
