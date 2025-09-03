@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            CalculatorInputTextBox = new TextBox();
             btnOne = new Button();
             btnTwo = new Button();
             btnThree = new Button();
@@ -47,17 +47,17 @@
             btnClear = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // CalculatorInputTextBox
             // 
-            textBox1.Anchor = AnchorStyles.Bottom;
-            textBox1.BackColor = SystemColors.HighlightText;
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(56, 12);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(238, 37);
-            textBox1.TabIndex = 0;
-            textBox1.TextAlign = HorizontalAlignment.Right;
+            CalculatorInputTextBox.Anchor = AnchorStyles.Bottom;
+            CalculatorInputTextBox.BackColor = SystemColors.HighlightText;
+            CalculatorInputTextBox.BorderStyle = BorderStyle.None;
+            CalculatorInputTextBox.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CalculatorInputTextBox.Location = new Point(56, 12);
+            CalculatorInputTextBox.Name = "CalculatorInputTextBox";
+            CalculatorInputTextBox.Size = new Size(238, 37);
+            CalculatorInputTextBox.TabIndex = 0;
+            CalculatorInputTextBox.TextAlign = HorizontalAlignment.Right;
             // 
             // btnOne
             // 
@@ -263,7 +263,7 @@
             Controls.Add(btnThree);
             Controls.Add(btnTwo);
             Controls.Add(btnOne);
-            Controls.Add(textBox1);
+            Controls.Add(CalculatorInputTextBox);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -274,7 +274,7 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox CalculatorInputTextBox;
         private Button btnOne;
         private Button btnTwo;
         private Button btnThree;

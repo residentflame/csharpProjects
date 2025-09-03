@@ -28,6 +28,7 @@ namespace Calculator
         string operation = "";
         double secondOperand = 0;
         double result = 0;
+        
         public Form1()
         {
             InitializeComponent();
@@ -38,7 +39,6 @@ namespace Calculator
         {
             public static string SetButtonText(ButtonType buttonType)
             {
-                // This should work if 
                 return buttonType switch
                 {
                     ButtonType.Add => "+",
@@ -85,24 +85,21 @@ namespace Calculator
             btnNine.Text = ButtonHelper.SetButtonText(ButtonType.Nine);
         }
 
-        // Number Button click method
         private void NumberButton_Click(object sender, EventArgs e)
         {
 
             Button button = sender as Button;
             if (button != null)
             {
-                // Update the display
-                currentInput += button.Text; // Append the button's text to currentInput
+                currentInput += button.Text; 
 
                 if (string.IsNullOrEmpty(operation))
                 {
-                    textBox1.Text = currentInput;
+                    CalculatorInputTextBox.Text = currentInput;
                 }
                 else
                 {
-                    // If an operation is set, display the first operand, operator, and current input (second operand)
-                    textBox1.Text = $"{firstOperand} {operation} {currentInput}";
+                    CalculatorInputTextBox.Text = $"{firstOperand} {operation} {currentInput}";
                 }
             }
         }
@@ -110,100 +107,94 @@ namespace Calculator
         // Clear button logic
         private void BtnClear_Click(object sender, EventArgs e)
         {
-            Button button = sender as Button;
+            Button button = (Button)sender;
             if (sender is Button)
             {
-                if (button.Text == "Clear")
+                switch (button.Text)
                 {
-                    ClearCalculator();
-                }
-                else
-                {
-                    // Update the display
-                    currentInput += button.Text; // Append the button's text to currentInput
-                    textBox1.Text = currentInput;
+                    case "Clear":
+                        currentInput = "";
+                        result = 0;
+                        operation = "";
+                        CalculatorInputTextBox.Text = "0";
+                        firstOperand = 0;
+                        secondOperand = 0;
+                        MessageBox.Show("Calculator cleared!");
+                        break;
+                    default:
+                        currentInput += button.Text; 
+                        CalculatorInputTextBox.Text = currentInput;
+                        break;
                 }
             }
-        }
-
-        // Clear button
-        private void ClearCalculator()
-        {
-
-            currentInput = "";
-            result = 0;
-            operation = "";
-            textBox1.Text = "0";
-            firstOperand = 0;
-            secondOperand = 0;
-
         }
 
         private void BtnOperand_Click(object sender, EventArgs e)
         {
-            Button button = sender as Button;
+            Button button = (Button)sender;
             if (button != null)
             {
 
-                // Check if the buttonis an operator
-                if (button.Text == "+" || button.Text == "-" || button.Text == "*" || button.Text == "/")
+
+                if (button.Text.Equals("+") || button.Text.Equals("-") || button.Text.Equals("*") || button.Text.Equals("/"))
                 {
                     if (string.IsNullOrEmpty(currentInput))
                     {
                         MessageBox.Show("Please enter a number first.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return; // Exit if no number is entered
+                        return;
                     }
 
-                    // Checks if the button input is a double before converting into double
+
                     if (!double.TryParse(currentInput, out firstOperand))
                     {
                         MessageBox.Show("Invalid number entered.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return; // Exit if input is invalid
+                        return;
                     }
                     operation = button.Text;
-                    textBox1.Text = firstOperand + " " + operation;
-                    currentInput = ""; // Reset current input for the next number
+                    CalculatorInputTextBox.Text = firstOperand + " " + operation;
+                    currentInput = "";
                 }
             }
 
-            if (button.Text == "=" && !string.IsNullOrEmpty(currentInput))
+            if (!button.Text.Equals("=") || string.IsNullOrEmpty(currentInput))
             {
-                if (!double.TryParse(currentInput, out secondOperand))
+                return;
+            }
+            if (!double.TryParse(currentInput, out secondOperand))
+            {
+                MessageBox.Show("Invalid number entered.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (operation.Equals("+"))
+            {
+                result = firstOperand + secondOperand;
+                DisplayUpdate(result.ToString());
+            }
+            else if (operation.Equals("-"))
+            {
+                result = firstOperand - secondOperand;
+                DisplayUpdate(result.ToString());
+            }
+            else if (operation.Equals("*"))
+            {
+                result = secondOperand * firstOperand;
+                DisplayUpdate(result.ToString());
+            }
+            else if (operation.Equals("/"))
+            {
+                if (secondOperand == 0)
                 {
-                    MessageBox.Show("Invalid number entered.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Invalid can't divide by 0.");
                     return;
                 }
-
-                if (operation.Equals("+"))
-                {
-                    result = firstOperand + secondOperand;
-                    DisplayUpdate(result.ToString());
-                }
-                else if (operation.Equals("-"))
-                {
-                    result = firstOperand - secondOperand;
-                    DisplayUpdate(result.ToString());
-                }
-                else if (operation.Equals("*"))
-                {
-                    result = secondOperand * firstOperand;
-                    DisplayUpdate(result.ToString());
-                }
-                else if (operation.Equals("/"))
-                {
-                    if (secondOperand == 0)
-                    {
-                        MessageBox.Show("invalid cant divide by 0");
-                        return;
-                    }
-                    result = firstOperand / secondOperand;
-                    DisplayUpdate(result.ToString());
-                }
+                result = firstOperand / secondOperand;
+                DisplayUpdate(result.ToString());
             }
         }
         private void DisplayUpdate(string text)
         {
-            textBox1.Text = text; // Update the display with the result
+            CalculatorInputTextBox.Text = text; 
         }
     }
 }
