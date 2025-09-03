@@ -108,7 +108,7 @@ namespace Calculator
         }
 
         // Clear button logic
-        private void btnClear_Click(object sender, EventArgs e)
+        private void BtnClear_Click(object sender, EventArgs e)
         {
             Button button = sender as Button;
             if (sender is Button)
@@ -139,7 +139,7 @@ namespace Calculator
 
         }
 
-        private void btnOperand(object sender, EventArgs e)
+        private void BtnOperand(object sender, EventArgs e)
         {
             Button button = sender as Button;
             if (button != null)
