@@ -28,7 +28,10 @@ namespace Calculator
         string operation = "";
         double secondOperand = 0;
         double result = 0;
-        
+        const string ERROR_TITLE_INPUT_ERROR = "Input Error";
+        const string ERROR_NUMBER_INPUT_ERROR = "Invalid number entered.";
+
+
         public Form1()
         {
             InitializeComponent();
@@ -88,7 +91,7 @@ namespace Calculator
         private void NumberButton_Click(object sender, EventArgs e)
         {
 
-            Button button = sender as Button;
+            Button button = (Button)sender;
             if (button != null)
             {
                 currentInput += button.Text; 
@@ -140,14 +143,14 @@ namespace Calculator
                 {
                     if (string.IsNullOrEmpty(currentInput))
                     {
-                        MessageBox.Show("Please enter a number first.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Please enter a number first.", ERROR_TITLE_INPUT_ERROR, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
 
 
                     if (!double.TryParse(currentInput, out firstOperand))
                     {
-                        MessageBox.Show("Invalid number entered.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(ERROR_NUMBER_INPUT_ERROR, ERROR_TITLE_INPUT_ERROR, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                     operation = button.Text;
@@ -162,7 +165,7 @@ namespace Calculator
             }
             if (!double.TryParse(currentInput, out secondOperand))
             {
-                MessageBox.Show("Invalid number entered.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ERROR_NUMBER_INPUT_ERROR, ERROR_TITLE_INPUT_ERROR, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
