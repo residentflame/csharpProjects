@@ -18,14 +18,12 @@ namespace SimpleTodo
 
         private void addTask_Click(object sender, EventArgs e)
         {
-            // Checks if the text task is not null
+           
             if (!string.IsNullOrEmpty(taskInput.Text))
             {
-                // Assigns text box text (textInput) to the Listbox named taskBox
-                taskBox.Items.Add(taskInput.Text);
-
-                // Adds text to the TodoItems list 
                 TodoItems.Add(taskInput.Text);
+
+                taskBox.Items.Add(taskInput.Text);
 
                 MessageBox.Show("Task added successfully!");
 
@@ -35,58 +33,51 @@ namespace SimpleTodo
             {
                 MessageBox.Show("Please enter an item.");
 
-                // Turns the focus to the textbox
+                taskInput.Focus();
             }
-            taskInput.Focus();
         }
 
         private void taskRemove_Click(object sender, EventArgs e)
         {
-            var selectedItem = taskBox.SelectedItem;
             if (taskBox.SelectedItem != null)
 
-            {   // remove selected ListBox item if != null
-                taskBox.Items.Remove(selectedItem);
-                TodoItems.Remove(selectedItem.ToString());
+            {   
+                TodoItems.Remove(taskBox.SelectedIndex.ToString());
+
+                taskBox.DataSource = null;
+                taskBox.DataSource = TodoItems;
 
                 MessageBox.Show("Item removed successfully!");
             }
             else
             {
                 MessageBox.Show("Please select an item.");
-
             }
             taskInput.Focus();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // Create an instance of the SaveFileDialog
-            SaveFileDialog SaveFileDialog = new SaveFileDialog 
-            {
-                Filter = "Text File|*.txt"
-            };
-
-            // Show the dialog and check if the user clicked OK
-            if (SaveFileDialog.ShowDialog() != DialogResult.OK)
-            {
-                MessageBox.Show("No file location was selected. Please try again.");
-                return;
-            }
-
-            var filePath = SaveFileDialog.FileName;
-            
-            if (string.IsNullOrEmpty(filePath) )
-            {
-                MessageBox.Show("File location not valid!");
-                return;
-            }
-
-            if (TodoItems == null || TodoItems.Count == 0) 
+            if (TodoItems.Count == 0)
             {
                 MessageBox.Show("Please enter at least one item to the list!");
                 return;
             }
+
+
+            SaveFileDialog SaveFileDialog = new SaveFileDialog
+            {
+                Filter = "Text File|*.txt",
+                Title = "Save your To-Do list"
+            };
+
+            if (SaveFileDialog.ShowDialog() != DialogResult.OK)
+            {
+                MessageBox.Show("File save was canceled.");
+                return;
+            }
+
+            var filePath = SaveFileDialog.FileName;
 
             try
             {
@@ -96,16 +87,14 @@ namespace SimpleTodo
                     {
                         writer.WriteLine(item.ToString());
                     }
-                // Notify user the list has been saved
                 MessageBox.Show("List saved to file successfully!");
-                // Show the file save location
-                MessageBox.Show($"File saved at: {filePath}");
+                taskBox.Items.Clear();
+                TodoItems.Clear();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error saving file: " + ex.Message);
+                MessageBox.Show($"Error saving file: {ex.Message}", "Save Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            taskBox.Items.Clear(); // Reset
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
@@ -113,24 +102,36 @@ namespace SimpleTodo
             using (OpenFileDialog fileDialog = new OpenFileDialog())
             {
                 fileDialog.Filter = "Text File|*.txt";
-                fileDialog.Title = "Select a File";
+                fileDialog.Title = "Select a File to Load";
 
                 if (fileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string selectedFilePath = fileDialog.FileName;
-
-                    using (StreamReader reader = new StreamReader(selectedFilePath))
+                    try
                     {
-                        string line;
-                        while ((line = reader.ReadLine()) != null)
+                        // Clear existing items from the listbox and the list
+                        taskBox.Items.Clear();
+                        TodoItems.Clear();
+
+                        using (StreamReader reader = new StreamReader(fileDialog.FileName))
                         {
-                            taskBox.Items.Add(line);
-                            TodoItems.Add(line); // Sync with list
+                            string line;
+                            while ((line = reader.ReadLine()) != null)
+                            {
+                                taskBox.Items.Add(line);
+                                TodoItems.Add(line);
+                            }
                         }
+                        MessageBox.Show("File loaded successfully!");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error loading file: {ex.Message}", "Load Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-                
-
+                else
+                {
+                    MessageBox.Show("File load was canceled.");
+                }
             }
         }
     }
