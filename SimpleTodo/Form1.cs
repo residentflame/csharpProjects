@@ -2,38 +2,89 @@ using System.Collections;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 using System.Windows.Forms;
+using Microsoft.Data.Sqlite;
 
 namespace SimpleTodo
 {
     public partial class Form1 : Form
     {
-
+        
         // Defines the TodoList list variable
         List<string> TodoItems = new();
 
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void addTask_Click(object sender, EventArgs e)
         {
-           
             if (!string.IsNullOrEmpty(taskInput.Text))
             {
-                TodoItems.Add(taskInput.Text);
+                string taskText = taskInput.Text;
 
-                taskBox.Items.Add(taskInput.Text);
+                string connectionString = "Data Source=todo.db";
+                try
+                {
+                    using (var connection = new SqliteConnection(connectionString))
+                    {
+                        connection.Open();
+                        string sql = "INSERT INTO TodoList (Task) VALUES (@Task)";
 
-                MessageBox.Show("Task added successfully!");
+                        using (var command = new SqliteCommand(sql, connection))
+                        {
+                            command.Parameters.AddWithValue("@Task", taskText);
+                            var rowsInserted = command.ExecuteNonQuery();
+                            if (rowsInserted > 0)
+                            {
+                                MessageBox.Show("Task has been added successfully!");
+                                LoadDBIntoListBox();
+                                taskInput.Text = "";
+                                taskInput.Focus();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Failed to add to the database.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
-                taskInput.Clear();
             }
             else
             {
                 MessageBox.Show("Please enter an item.");
 
                 taskInput.Focus();
+            }
+            
+        }
+
+        private void LoadDBIntoListBox()
+        {
+
+           string connectionString = "Data Source=todo.db";
+            using (var connection = new SqliteConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT Id, Task FROM TodoList";
+
+                using (var command = new SqliteCommand(query, connection))
+                using (SqliteDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int Id = Convert.ToInt32(reader["Id"]);
+                        string Task = (reader["Task"].ToString());
+
+                        taskBox.Items.Add($"{Id} - {Task}");
+                    }
+                }
             }
         }
 
@@ -130,7 +181,7 @@ namespace SimpleTodo
                 }
                 else
                 {
-                    MessageBox.Show("File load was canceled.");
+                    MessageBox.Show("File load was cancelled.");
                 }
             }
         }
