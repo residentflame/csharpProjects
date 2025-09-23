@@ -31,10 +31,9 @@
             taskInput = new TextBox();
             addTask = new Button();
             taskBox = new ListBox();
-            btnSave = new Button();
-            btnLoad = new Button();
             btnRemove = new Button();
             label1 = new Label();
+            UpdateEntryButton = new Button();
             SuspendLayout();
             // 
             // taskInput
@@ -62,7 +61,7 @@
             addTask.TabIndex = 1;
             addTask.Text = "Add";
             addTask.UseVisualStyleBackColor = false;
-            addTask.Click += addTask_Click;
+            addTask.Click += AddTask_Click;
             // 
             // taskBox
             // 
@@ -74,38 +73,6 @@
             taskBox.Name = "taskBox";
             taskBox.Size = new Size(238, 149);
             taskBox.TabIndex = 2;
-            // 
-            // btnSave
-            // 
-            btnSave.BackColor = Color.RoyalBlue;
-            btnSave.FlatAppearance.BorderSize = 0;
-            btnSave.FlatStyle = FlatStyle.Flat;
-            btnSave.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSave.ForeColor = Color.White;
-            btnSave.Location = new Point(469, 329);
-            btnSave.Margin = new Padding(2);
-            btnSave.Name = "btnSave";
-            btnSave.Size = new Size(113, 48);
-            btnSave.TabIndex = 4;
-            btnSave.Text = "Save List";
-            btnSave.UseVisualStyleBackColor = false;
-            btnSave.Click += btnSave_Click;
-            // 
-            // btnLoad
-            // 
-            btnLoad.BackColor = Color.RoyalBlue;
-            btnLoad.FlatAppearance.BorderSize = 0;
-            btnLoad.FlatStyle = FlatStyle.Flat;
-            btnLoad.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLoad.ForeColor = Color.White;
-            btnLoad.Location = new Point(469, 266);
-            btnLoad.Margin = new Padding(2);
-            btnLoad.Name = "btnLoad";
-            btnLoad.Size = new Size(113, 45);
-            btnLoad.TabIndex = 5;
-            btnLoad.Text = "Load List";
-            btnLoad.UseVisualStyleBackColor = false;
-            btnLoad.Click += btnLoad_Click;
             // 
             // btnRemove
             // 
@@ -133,16 +100,31 @@
             label1.TabIndex = 7;
             label1.Text = "Simple ToDo";
             // 
+            // UpdateEntryButton
+            // 
+            UpdateEntryButton.BackColor = Color.RoyalBlue;
+            UpdateEntryButton.FlatAppearance.BorderSize = 0;
+            UpdateEntryButton.FlatStyle = FlatStyle.Flat;
+            UpdateEntryButton.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            UpdateEntryButton.ForeColor = Color.White;
+            UpdateEntryButton.Location = new Point(523, 289);
+            UpdateEntryButton.Margin = new Padding(2);
+            UpdateEntryButton.Name = "UpdateEntryButton";
+            UpdateEntryButton.Size = new Size(171, 51);
+            UpdateEntryButton.TabIndex = 8;
+            UpdateEntryButton.Text = "Update Entry";
+            UpdateEntryButton.UseVisualStyleBackColor = false;
+            UpdateEntryButton.Click += UpdateEntryButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGray;
             ClientSize = new Size(780, 439);
+            Controls.Add(UpdateEntryButton);
             Controls.Add(label1);
             Controls.Add(btnRemove);
-            Controls.Add(btnLoad);
-            Controls.Add(btnSave);
             Controls.Add(taskBox);
             Controls.Add(addTask);
             Controls.Add(taskInput);
@@ -161,9 +143,8 @@
         private TextBox taskInput;
         private Button addTask;
         private ListBox taskBox;
-        private Button btnSave;
-        private Button btnLoad;
         private Button btnRemove;
         private Label label1;
+        private Button UpdateEntryButton;
     }
 }
